@@ -1,11 +1,11 @@
 {
     "type": "code",
     "modid": "landformorderfix",
-    "name": "LandformOrderFix",
+    "name": "Landform Order Fix",
     "authors": [
-        "Unknown"
+        "Burneddi"
     ],
-    "description": "To be added",
+    "description": "Fixes inconsistent load orders affecting worldgen with multiple landform mods.",
     "version": "1.0.0",
     "dependencies": {
         "game": ""

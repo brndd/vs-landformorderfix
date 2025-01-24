@@ -10,11 +10,6 @@ namespace LandformOrderFix;
 [HarmonyPatch]
 public class LandformOrderFixNoiseLandformsPatch
 {
-    // public static Type TargetType()
-    // {
-    //     return AccessTools.TypeByName("Vintagestory.ServerMods.NoiseLandforms");
-    // }
-
     public static MethodBase TargetMethod()
     {
         var type = AccessTools.TypeByName("Vintagestory.ServerMods.NoiseLandforms");
