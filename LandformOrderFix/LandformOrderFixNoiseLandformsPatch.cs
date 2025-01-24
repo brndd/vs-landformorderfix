@@ -52,6 +52,13 @@ public class LandformOrderFixNoiseLandformsPatch
 
             if (variant.Mutations != null)
             {
+                //Sort this damn thing too while we're in here, just in case
+                Array.Sort(variant.Mutations, (x, y) =>
+                {
+                    string xCode = x?.Code ?? string.Empty;
+                    string yCode = y?.Code ?? string.Empty;
+                    return string.CompareOrdinal(xCode, yCode);
+                });
                 quantityMutations += variant.Mutations.Length;
             }
         }
